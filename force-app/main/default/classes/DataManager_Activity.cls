@@ -53,6 +53,7 @@ public class DataManager_Activity  implements Queueable {
         for (Integer i=1;i<filelines.size();i++)
         {
             String[] inputvalues = filelines[i].split(',');
+            // If the filelines are not up-to-date make them work in time
             
             // If the related Opp is not out of the timeframe (i.e. not present)
             if (objectIdbyName.get('Opportunity').get(inputValues[0]) != null) {
